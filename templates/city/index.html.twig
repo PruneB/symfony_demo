@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Home!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; text-align: center;}
+    .example-wrapper code { background: #f7e5f7; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+    <h1>Bienvenue à  {{ city }}!</h1>
+
+    <p>Die est une commune française, sous-préfecture du département de la Drôme en région Auvergne-Rhône-Alpes.
+    Ses habitants sont dénommés les Diois et Dioises. 
+    </p>
+    <li>Nombre d'habitants : 4 576</li>
+    <img src="http://127.0.0.1:8000/assets/die.jpg" height="50%" width="50%">
+    <li>Venez découvrir les points d'intêrets ici : <code><a href="/pointOfInterest"> Point d'intêrets </a></code></li>
+    <li>Tout l'histoire de {{city}} ici :  <code><a href="/history">L'histoire</a></code></li>
+</div>
+{% endblock %}

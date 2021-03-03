@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Point of interest{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; text-align: center;}
+    .example-wrapper code { background: #f7e5f7; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+    <h1>Pourquoi venir à {{city}} ?</h1>
+
+
+    <ul>
+        <li>La clairette de Die</li>
+        <img src="http://127.0.0.1:8000/assets/clair.jpg" height="20%" width="20%">
+        <li>Prune</li>
+        <img src="http://127.0.0.1:8000/assets/prune.jpg" height="20%" width="20%">
+        <li>Aller se reposer à la Drôme</li>
+        <img src="http://127.0.0.1:8000/assets/drome.jpg" height="40%" width="40%">
+        <li>Prendre un café au St Marcel (ah non ça existe plus)</li>
+        <img src="http://127.0.0.1:8000/assets/stmar.jpg" height="40%" width="40%">
+        <li>La clairette de Die</li>
+        <img src="http://127.0.0.1:8000/assets/clair.jpg" height="20%" width="20%">
+        <li>En cas d'invasion de zombies</li>
+        <img src="http://127.0.0.1:8000/assets/zombie.jpg" height="20%" width="20%">
+        <li>Mourir en paix</li>
+        <img src="http://127.0.0.1:8000/assets/mort.jpg" height="30%" width="30%">
+    </ul>
+        <li>Page d'accueil : <code><a href="/"> Ici</a></code></li>
+        <li>Tout l'histoire de {{city}} ici :  <code><a href="/history">L'histoire</a></code></li>
+</div>
+{% endblock %}
